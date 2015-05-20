@@ -4,7 +4,7 @@
  *
  * This file has the following configurations: MySQL settings, Table Prefix,
  * Secret Keys, and ABSPATH. You can find more information by visiting
- * {@link https://codex.wordpress.org/Editing_wp-config.php Editing wp-config.php}
+ * {@link http://codex.wordpress.org/Editing_wp-config.php Editing wp-config.php}
  * Codex page. You can get the MySQL settings from your web host.
  *
  * This file is used by the wp-config.php creation script during the
@@ -14,26 +14,24 @@
  * @package WordPress
  */
 
+define('WP_REDIS_HOST', 'cluster-redis-sinje.vzvttp.0001.sae1.cache.amazonaws.com');
 
-define('WP_REDIS_HOST','wordpress.mplfls.0001.sae1.cache.amazonaws.com');
 
-define('WP_HOME','http://wordpress-1024604632.sa-east-1.elb.amazonaws.com');
-define('WP_SITEURL','http://wordpress-1024604632.sa-east-1.elb.amazonaws.com');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'db_wordpress');
 
 /** MySQL database username */
-define('DB_USER', 'wordpress');
+define('DB_USER', 'db_admin');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'wordpress');
+define('DB_PASSWORD', 'rootroot');
 
 /** MySQL hostname */
-define('DB_HOST', 'wordpress.cfyzsi3p8t2x.sa-east-1.rds.amazonaws.com:3306');
+define('DB_HOST', 'dbwordpress-sinje.c5norroipcoe.sa-east-1.rds.amazonaws.com:3306');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8mb4');
+define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -47,14 +45,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'L>eEHKaNkUDs@g[`0G+g}b8#zT}Z43ZjqE&zD=wuZTHaUy+fbtw|li {+O2Q:z-E');
-define('SECURE_AUTH_KEY',  '*a>:1`_a@D.Q4tDS?4T`W!fG0ZF^!|#&sN9DGMMdXz#_>iy&1+OFFS&q$I}e,}vW');
-define('LOGGED_IN_KEY',    'k/e|&0V*d=hjY%fz{U+iye:AE+//|9|c%{{CT4NyF0lo(npQu;.Q2jv}(M%*&?`.');
-define('NONCE_KEY',        '?A3;[ &OTVnh=k3bC,_<X&<RMQ,,oWdIbSm=n!Nr@XJ$j/,1WT2a]Wh>nlYw;*>]');
-define('AUTH_SALT',        '+XT?7X<7-mGAO{ic]l-!R:_,D=zC+j@B=Cap9Sr:6hFYi2~~|7LO<(,E$L-P`PQ?');
-define('SECURE_AUTH_SALT', 'f;6N>6]+,@xdyrT5R%AQ&/gfeC7`+ ~{N?]G@E|LX2F6^Kg(HV|c``n{kaxbO+if');
-define('LOGGED_IN_SALT',   'KQbkJ<&r>o5OYBWhfST$-i:nJ@9}i%9890Z:ekr|x%]b[DE-DY[Te_I;]Oy>U0ww');
-define('NONCE_SALT',       't/lci_{@36tIMbFh{j4gA!7(Zm5uMfwwF*:W7g+=}aY_6?+Y4_/w;9_Uwz?(r+zi');
+define('AUTH_KEY',         '7#xl&M6?ig-Cukjpd,oCXB-YwdLEV10coEeH&/t e,fC-T|R(+4dim0};n:8D<Up');
+define('SECURE_AUTH_KEY',  'UQJfq/o+1glg})SHqndvqvB%qXR!+Pn$`LNbmXm2Qa |NK}9)CQrhG}{wAY?Z[r*');
+define('LOGGED_IN_KEY',    'Nf%Anr`$1!6gNRSADU~bkyi}&kxmR!3BMqL*x|6v,v|i-+>O`q}@-:g~QAP_]Ri|');
+define('NONCE_KEY',        '2*k1vfmJeD;5l{@|:[@^%H>|~t r?LPI7S?_XKP.Sy8u~B0f&xln@%t}7X!Jk+Tf');
+define('AUTH_SALT',        '76u+]e,=eM<HN@%<<}tJOtcJPL(>SDwm~rh-)Wj6p1|&nPfC|8)EQ[nd<#))+M6r');
+define('SECURE_AUTH_SALT', '#RRCzZPWDY TS:t/!{Bw9dH8lcU#iT.@sMb-!XH_Wt)k-_D%#vM?Pt3[0p%%}t]|');
+define('LOGGED_IN_SALT',   '5[[-6D(IFqJ+N1MfzC$;d}{5=c+-Bb=ki>!NQFQq?k@H@/~?ftbmkkmcc-@8_l/`');
+define('NONCE_SALT',       'uG(HA{ LMC]kR*wx>:-X~&FqltL@|SkK9iNSq;`=6@g@-n{XuWL~YuVaTwD!D42Y');
 
 /**#@-*/
 
