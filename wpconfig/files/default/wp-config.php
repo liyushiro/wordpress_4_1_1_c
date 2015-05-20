@@ -13,9 +13,11 @@
  *
  * @package WordPress
  */
-
+ 
 define('WP_REDIS_HOST', 'cluster-redis-sinje.vzvttp.0001.sae1.cache.amazonaws.com');
 
+define('WP_HOME','http://load-balancer-sinje-1295459531.sa-east-1.elb.amazonaws.com');
+define('WP_SITEURL','http://load-balancer-sinje-1295459531.sa-east-1.elb.amazonaws.com');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
